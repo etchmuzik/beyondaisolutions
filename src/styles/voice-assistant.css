@@ -1,0 +1,68 @@
+/* Voice Assistant Widget Custom Styles */
+.voice-assistant-widget {
+  --convai-widget-primary-color: rgb(71, 189, 164);
+  --convai-widget-primary-color-hover: rgb(61, 169, 144);
+  --convai-widget-background-color: rgb(0, 0, 0);
+  --convai-widget-text-color: rgb(255, 255, 255);
+  --convai-widget-border-color: rgba(255, 255, 255, 0.1);
+  --convai-widget-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  
+  /* Base Styles */
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--convai-widget-background-color);
+  color: var(--convai-widget-text-color);
+  
+  /* Animations */
+  transition: all 0.3s ease;
+}
+
+/* Button Styles */
+.voice-assistant-widget button {
+  background: var(--convai-widget-primary-color) !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.voice-assistant-widget button:hover {
+  background: var(--convai-widget-primary-color-hover) !important;
+  transform: translateY(-1px) !important;
+}
+
+.voice-assistant-widget button:active {
+  transform: translateY(0) !important;
+}
+
+/* Input Styles */
+.voice-assistant-widget input,
+.voice-assistant-widget textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--convai-widget-border-color) !important;
+  border-radius: 0.5rem !important;
+  color: var(--convai-widget-text-color) !important;
+}
+
+/* Messages Container */
+.voice-assistant-widget .messages-container {
+  padding: 1rem !important;
+  gap: 1rem !important;
+}
+
+/* Individual Messages */
+.voice-assistant-widget .message {
+  border-radius: 0.75rem !important;
+  padding: 0.75rem 1rem !important;
+  max-width: 85% !important;
+}
+
+/* User Message */
+.voice-assistant-widget .user-message {
+  background: var(--convai-widget-primary-color) !important;
+  color: black !important;
+}
+
+/* Assistant Message */
+.voice-assistant-widget .assistant-message {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--convai-widget-text-color) !important;
+}
